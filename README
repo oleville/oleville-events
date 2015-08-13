@@ -1,0 +1,43 @@
+This plugin is designed to add the functionality to save events as a custom
+post type and also to sync the creation, update, and deletion (trashing) of
+these events with a google calendar.  Then using other plugins that read
+from a calendar, these events can be displayed.
+
+===== SETUP =====
+
+##### Google Calendar Synchronization #####
+
+Before using this plugin, modify the file "google-calendar/config.php"
+to synchronize the events created with the plugin and the events displayed
+on a google calendar.
+
+##### Custom Handling of Errors #####
+
+In order for the Google Calendar API not to crash the plugin (e.g. when
+trying to delete an event that has already been deleted), the plugin will
+simply record the error using the write_log custom function. The function
+is described in this url: 
+
+http://www.stumiller.me/sending-output-to-the-wordpress-debug-log/
+
+For sake of simplicity, add the following lines to "functions.php":
+
+if (!function_exists('write_log')) {
+	function write_log ( $log )  {
+		if ( true === WP_DEBUG ) {
+			if ( is_array( $log ) || is_object( $log ) ) {
+				error_log( print_r( $log, true ) );
+			} else {
+				error_log( $log );
+			}
+		}
+	}
+}
+
+===== ACTIVATION =====
+
+##### Email Functionality #####
+
+In order to send emails, the settings must be configured to choose the
+source and destination email addresses.  Once I figure out how to do this,
+I will update this section of the README to reflect the steps necessary.

@@ -1,0 +1,5 @@
+.DS_STORE
+
+# Don't store key files
+google-calendar/*.p12
+google-calendar/google-php-client

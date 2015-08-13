@@ -1,0 +1,137 @@
+div#tab-headers div.tab-head {
+	display: inline-block;
+	color: #ddd;
+}
+
+div#tab-headers div.tab-head h3 {
+	color: inherit;
+	-moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+}
+
+div#tab-headers div.tab-head h3:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+div#tab-headers div.active {
+	color: #000;
+}
+
+div#tab-headers div.active * {
+	color: inherit;
+}
+
+table#queryresultstable {
+	width: 100%;
+}
+
+table#queryresultstable tr {
+	text-align: center;
+	vertical-align: center;
+}
+
+table#queryresultstable tr.eventmail-columns {
+	font-weight: bold;
+}
+
+table#queryresultstable tr.eventmail-item:nth-child(even) {
+	background: #eee;
+}
+
+table#queryresultstable tr.eventmail-item:hover {
+	background: #ddd;
+}
+
+table#queryresultstable tr.no-results {
+	text-align: left;
+}
+
+.instructions {
+	font-weight: bold;
+}
+
+div.tabpage {
+	margin-left: 10px;
+	display: none;
+}
+
+div.active-tab {
+	display: block;
+}
+
+div#querybuilder label {
+	margin-left: 15px;
+}
+
+div#tab-footer {
+	width: 150px;
+	margin: auto;
+}
+
+img.loading-animation {
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: auto;
+}
+
+div.inline-block {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.half-width {
+	width: 48%;
+}
+
+div.float-right {
+	float: right;
+}
+
+div.margin-left {
+	margin-left: 10px;
+}
+
+textarea#mailbody {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+table#selectedeventstable {
+	width: 100%;
+}
+
+table#selectedeventstable tr {
+	text-align: center;
+	vertical-align: center;
+}
+
+table#selectedeventstable tr.eventmail-columns {
+	font-weight: bold;
+}
+
+tbody#selectedeventsbody {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+tbody#selectedeventsbody  tr.selectedevent-item {
+	margin: 0 3px 3px 3px; 
+	padding: 0.4em; 
+	padding-left: 1.5em;
+		cursor:move;
+
+}
+
+tbody#selectedeventsbody  tr.selectedevent-item  td.arrow {
+	position: absolute;
+	margin-left: -1.3em;
+}
+
+iframe#preview-wrapper {
+	border: solid 1px #ddd;
+	width: 100%;
+}

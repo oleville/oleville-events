@@ -1,0 +1,18 @@
+.ui-positionpicker-wrapper {
+	max-height:250px;
+	overflow-y:scroll;
+	width:158px;
+	border: 1px solid rgb(221, 221, 221);
+	border-top: 0 none;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0666667) 0px 1px 2px inset;
+	box-shadow: rgba(0, 0, 0, 0.0666667) 0px 1px 2px inset;	
+	background: #FFF;
+}
+
+.ui-positionpicker-wrapper ul {
+	margin-top:5px;	
+}
+
+.ui-positionpicker-wrapper li {
+	text-align:center;
+}
